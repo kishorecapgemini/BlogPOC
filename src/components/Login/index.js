@@ -25,7 +25,7 @@ const Login = ({authorized}) => {
 
     }
     const validationSchema = Yup.object().shape({
-        emailaddress: Yup.string().email('Please enter valid email').required('Required'),
+        emailaddress: Yup.string().email('Please enter valid email address').required('Required'),
         password: Yup.string().min(8, 'Password minimum lenght should be 8').required('Required')
     })
 

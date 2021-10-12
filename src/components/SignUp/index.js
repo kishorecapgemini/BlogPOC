@@ -67,9 +67,9 @@ const Signup = () => {
 
                                     <Grid className="sam" >
                                         By signing up, you are agreeing to <br></br>the
-                                        <Link href="#" className="linkstl" >
+                                        <Link onClick={() => {history.push("/terms") }} href="#" className="linkstl" >
                                             {"      "}terms of service
-                                        </Link> & <Link href="#" className="linkstle">
+                                        </Link> & <Link onClick={() => {history.push("/privacy") }} href="#" className="linkstle">
                                             privacy policy
                                         </Link>.
                                     </Grid>
